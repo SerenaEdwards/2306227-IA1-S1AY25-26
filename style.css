@@ -1,0 +1,422 @@
+
+/*  Name: Serena Edwards
+    ID: 2306227
+    Lecturer: Ms. Christine Anuli
+    Module Name: Web Programming
+    Occurrence: UM2
+    Day and Time: Thursday 1pm to 3pm---  */
+
+/*CSS Variables*/
+:root {
+ --main-color: rgb(252,245,200,100); /*yellow*/
+ --accent-color: rgb(142,200,250,67); /*blue*/
+ --text-color: #000000;
+ --font-main: 'inter';
+}
+
+header {
+    display: flex;
+    align-items: center; /* vertically center the items */
+    justify-content: space-between; /* puts space between h1 and nav */
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    margin: 20px 0;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+    height: 80px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+button {
+  background-color: var(--main-color);
+  padding: 10px 20px; /* Top/Bottom and Left/Right padding */
+  border: none; /* Remove default border */
+  border-radius: 5px;
+  font-size: 15px; /* Text size */
+  cursor: pointer; /* Cursor changes on hover */
+
+  a:hover {
+    color: white;
+  }
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #13a8ed;
+}
+
+/* Active effect when clicking */
+button:active {
+  background-color: #226aad;
+}
+
+header h1 {
+    margin: 0; /* remove default margin */
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* space between links */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-weight: 500;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.circular-img {
+    width: 250px;       /* adjust size as needed */
+    height: 250px;      /* make width = height for perfect circle */
+    border-radius: 50%; /* makes it circular */
+    object-fit: cover;  /* ensures image fills circle without distortion */
+}
+
+.about-container p{
+    color: black;
+    background-color: var(--accent-color);
+    width: 500px;
+    height: 100px;
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+}
+
+/*PAGE 2 --- Work Page*/
+/*Text and Image beside each other*/
+.work-flex-container {
+    display: flex;              /* side-by-side layout */
+    align-items: flex-start;    /* align at the top */
+    gap: 20px;                  /* space between text and image */
+    flex-wrap: wrap;            /* wrap on smaller screens */
+}
+
+.work-text {
+    flex: 1;                    /* text takes available space */
+    min-width: 250px;           /* prevents text from shrinking too much */
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 30px;              /* adjust padding so text fits nicely */
+}
+
+.imgWork-container {
+    flex: 0 0 40%;              /* image container takes 40% width */
+    text-align: center;         
+}
+
+.imgWork-container img {
+    width: 100%;                /* image fills container width */
+    height: auto;               /* keeps aspect ratio */
+    border-radius: 12px;
+}
+
+/* Resume */
+.resume-container {
+    border-radius: 12px;
+}
+
+.statements-container {
+    background-color: var(--accent-color);
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/*Personal Page*/
+/* Bookmark link styling */
+.bookmark-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-top {
+  text-decoration: none;
+  background-color: #cddce5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-top:hover {
+  background-color: var(--accent-color);
+}
+
+.hobbies-wrapper {
+    display: flex;              /* side by side layout */
+    justify-content: center;    /* center horizontally */
+    gap: 20px;                  /* space between cards */
+    flex-wrap: wrap;            /* stack on smaller screens */
+    margin: 20px auto;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;     /* image on top, text below */
+    align-items: center;       
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;               /* consistent card width */
+    box-sizing: border-box;
+}
+
+.hobby-card img {
+    width: 100%;                /* image fills card width */
+    height: auto;               /* maintain aspect ratio */
+    border-radius: 12px;
+    margin-bottom: 10px;        /* space between image and text */
+}
+
+.hobby-card p {
+    text-align: center;         
+}
+
+/* Movies section*/
+.card {
+  color: white;
+  flex: 1 1 150px;
+  background-color: #0e125a;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animation */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Section Container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  background: rgb(224, 227, 44);
+}
+
+.hero-picture img {
+   width: 100%;                /* image fills container width */
+   height: auto;               /* keeps aspect ratio */
+   border-radius: 12px;
+}
+
+.hero-text {
+  flex: 1;                    /* text takes available space */
+    min-width: 250px;         /* ensures text doesn't get too small */
+    background-color: var(--accent-color);
+    width: 300px;
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+a {  /*affects all links on page*/
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(224, 101, 235);
+
+}
+
+/*AI Business Container*/
+.report-container {
+    align-items: center;        /* center content */
+    background-color: var(--accent-color);
+    border-radius: 12px;
+}
+
+.reportText {                   
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+.reportImage img {
+  width: 80%;               
+  height: auto;             
+  border-radius: 12px;
+}
+
+/*Development page*/
+
+/* Section styling */
+#development {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #fffaf0, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+
+/* Animate on load */
+#development {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Section headings */
+#development h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #2c3e50;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#development h3 {
+  color: #004d7a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Paragraphs styling */
+#development p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 3px solid #f7d794;
+}
+
+/* Hover effect for the whole section */
+#development:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Contact Page*/
+
+/* Main layout using Flexbox */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Contact form and info cards */
+.contact-form, .contact-info {
+  flex: 1 1 300px;
+  background-color: var(--accent-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Input fields */
+input, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Picture Showcase Section */
+.image-showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #fffaf0, #ffffff);
+  border: 2px solid #f7d794;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin: 50px auto;
+  width: 25%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-showcase:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.image-showcase img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Cool hover effects */
+.image-showcase img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1) saturate(1.2);
+}
