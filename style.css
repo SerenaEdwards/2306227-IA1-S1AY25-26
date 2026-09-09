@@ -87,10 +87,6 @@ section {
     object-fit: cover;  /* ensures image fills circle without distortion */
 }
 
-.about-container p{
-    color: black;
-}
-
 .about-container {
  width: 550px;
  height: 200px;
