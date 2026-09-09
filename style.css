@@ -97,6 +97,11 @@ section {
     padding: 50px;
 }
 
+.about-container {
+ width: 550px;
+ height: 300px;
+}
+
 body {
     font-family: var(--font-main);
     color: var(--text-color);
