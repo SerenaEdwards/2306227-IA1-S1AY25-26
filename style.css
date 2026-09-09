@@ -142,9 +142,13 @@ footer {
 
 /* Resume */
 .resume-container {
-    border-radius: 12px;
     width: 800px;  
     height: 500px;
+}
+
+.resume-container img {
+    width: 80%;
+    height: auto;
 }
 
 .statements-container {
